@@ -1,0 +1,10 @@
+balena-etcher 2:2.1.2-2
+brother-hll2325dw 4.0.0-1
+brother-hll2325dw-debug 4.0.0-1
+google-chrome 137.0.7151.119-1
+intellij-idea-ultimate-edition 2025.1.2-2
+spotify 1:1.2.63.394-1
+visual-studio-code-bin 1.101.1-1
+visual-studio-code-bin-debug 1.97.0-1
+yay 12.5.0-1
+yay-debug 12.5.0-1
