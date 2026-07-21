@@ -122,6 +122,8 @@ alias vi='nvim'
 alias vim='nvim'
 path+=/home/mmtrent/bin
 
+export PATH="$HOME/.local/bin:$PATH"
+
 alias myscrot='scrot -s ~/Pictures/Screenshots/%b%d::%H%M%S.png'
 
 # Git Bare Repository to manage dotfiles

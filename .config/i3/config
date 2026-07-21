@@ -15,8 +15,33 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:HackNerdFont-Regular.ttf 16
 
-default_border pixel 1
+default_border pixel 2
 default_floating_border pixel 1
+# client.focused #7fb4ca
+
+# ── Kanagawa Dragon ─────────────────────────────────────────
+set $bg        #181616
+set $bg_alt    #1D1C19
+set $fg        #c5c9c5
+set $fg_dim    #a6a69c
+
+set $dragonRed     #c4746e
+set $dragonBlue    #8ba4b0
+set $dragonGreen   #8a9a7b
+set $dragonYellow  #c4b28a
+set $dragonPurple  #a292a3
+set $dragonCyan    #8ea4a2
+set $dragonGray    #6a6a6a
+
+# class                 border         background   text     indicator     child_border
+client.focused          $dragonBlue    $bg          $fg      $dragonBlue   $dragonBlue
+client.unfocused        $dragonGray    $bg_alt      $fg_dim  $dragonGray   $dragonGray
+client.focused_inactive $dragonPurple  $bg_alt      $fg_dim  $dragonPurple $dragonPurple
+client.urgent           $dragonRed     $dragonRed   $bg      $dragonRed    $dragonRed
+client.placeholder      $dragonGray    $bg_alt      $fg_dim  $dragonGray   $dragonGray
+
+
+
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -203,6 +228,18 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status | ~/.scripts/i3spotifystatus/pystatus.py
+
+        colors {
+        statusline $fg
+        separator  $dragonGray
+
+        # class              border        background    text
+        focused_workspace    $dragonBlue   $dragonPurple       $fg
+        active_workspace     $dragonPurple $bg       $fg
+        inactive_workspace   $dragonGray   $bg           $fg_dim
+        urgent_workspace     $dragonRed    $dragonRed    $bg
+        binding_mode         $dragonYellow $bg_alt       $bg
+    }
 }
 
 gaps inner 5
