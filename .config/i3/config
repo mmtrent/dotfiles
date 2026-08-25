@@ -57,6 +57,8 @@ exec --no-startup-id feh --bg-fill /home/mmtrent/Pictures/pine-watt-unsplash.jpg
 
 exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
 
+# exec --no-startup-id export XCURSOR_SIZE=48
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
