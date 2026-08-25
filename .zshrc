@@ -127,4 +127,4 @@ export PATH="$HOME/.local/bin:$PATH"
 alias myscrot='scrot -s ~/Pictures/Screenshots/%b%d::%H%M%S.png'
 
 # Git Bare Repository to manage dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
