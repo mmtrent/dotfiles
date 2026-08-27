@@ -111,3 +111,6 @@ require("nvim-treesitter.configs").setup({
 	highlight = { enable = true },
 	indent = { enable = true },
 })
+
+-- ====== Copy Paste to x11 Clipboard ===========
+vim.opt.clipboard = "unnamedplus"
