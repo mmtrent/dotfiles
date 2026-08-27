@@ -14,3 +14,8 @@
     2. alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
     3. config config --local status.showUntrackedFiles no
     4. echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
+
+## Mouse Acceleration
+- Created 50-mx-ergo.conf
+    - Used MouseAccel.py script to generate xinput values
+    - Created symbolic link to /etc/X11/xorg.conf.d/50-mx-ergo.conf (Will need to do on any new system)
